@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="don.html" method="get">
+    <!-- form태그는 action이라는 속성으로 결과화면을 제공, method는 백엔드 개발 분야로 정보를 취합해서 보낼때 사용하는 방법을 설정하는 것. -->
+        <fieldset>
+        <!-- fieldset: form태그안에 1개 이상을 사용할 수 있으며, 입력 받는 정보들을 감싸는 태그이다. -->
+            <legend>회원가입 양식 폼</legend>
+            <!-- legend: fieldset의 h1같은 것, 즉 제목태그 -->
+
+            <table>
+                <!-- table: 입력받을 정보들의 레이어들을 정리하는 태그, 즉 사용자가 입력할 내용을 포합하는 태그 -->
+                <caption>회원가입 입력양식 테이블</caption>
+                <!-- caption: table의 제목태그 -->
+
+                <tr>
+                    <th scope="row">
+                        <label for="username">이름</label>
+                    </th>
+                    <td>
+                        <input type="text" name="username" id="username">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="password">비밀번호</label>
+                    </th>
+                    <td><input type="password" name="pwd" id="pwd"></td>
+                </tr>
+                <tr>
+                    <th scope="row">취미</th>
+                    <td>
+                        <input type="checkbox" name="hobby" id="reading">
+                        <label for="reading">독서</label>
+                        <input type="checkbox" name="hobby" id="music">
+                        <label for="music">음악감상</label>
+                        <input type="checkbox" name="hobby" id="game">
+                        <label for="game">게임</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">성별</th>
+                    <td>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">남자</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">여자</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                        <label for="company">통신사</label>
+                    </th>
+                    <td>
+                        <select name="company" id="company">
+                            <option value="">선택하세요</option>
+                            <option value="SKT">SKT</option>
+                            <option value="KT">KT</option>
+                            <option value="LG U+">LG U+</option>
+                            <option value="알뜰폰">알뜰폰</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+
+                        <label for="comments">남기는말</label>
+                    </th>
+                    <td>
+                        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <input type="reset" value="취소">
+                        <input type="submit" value="제출">
+                    </th>
+                </tr>
+            </table>
+            
+        </fieldset>
+
+    </form>
+</body>
+</html>
